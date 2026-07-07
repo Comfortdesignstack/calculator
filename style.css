@@ -221,3 +221,44 @@ button:hover{
 .theme-3 span{
     color:hsl(52, 100%, 62%);
 }
+
+@media (max-width: 600px){
+
+    body{
+        padding: 20px;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .top{
+        margin-bottom: 20px;
+    }
+
+    .top h2{
+        font-size: 28px;
+    }
+
+    .theme-switch{
+        gap: 10px;
+    }
+
+    #display{
+        height: 90px;
+        font-size: 28px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .buttons{
+        gap: 12px;
+        padding: 20px;
+    }
+
+    button{
+        font-size: 24px;
+        padding: 12px;
+    }
+}
