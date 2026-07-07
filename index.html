@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-1">
+
+  <div class="container">
+
+    <div class="top">
+      <h2>calc</h2>
+
+      <div class="theme-switch">
+        <p>THEME</p>
+        
+        <div class="switcher">
+          <div class="numbers">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+
+          <input type="range" min="1" max="3" value="1" id="themeSlider">
+        </div>
+      </div>
+    </div>
+
+
+    <input type="text" id="display" readonly>
+
+
+    <div class="buttons">
+
+      <button onclick="add('7')">7</button>
+      <button onclick="add('8')">8</button>
+      <button onclick="add('9')">9</button>
+      <button class="del" onclick="del()">DEL</button>
+
+      <button onclick="add('4')">4</button>
+      <button onclick="add('5')">5</button>
+      <button onclick="add('6')">6</button>
+      <button onclick="add('+')">+</button>
+
+      <button onclick="add('1')">1</button>
+      <button onclick="add('2')">2</button>
+      <button onclick="add('3')">3</button>
+      <button onclick="add('-')">-</button>
+
+      <button onclick="add('.')">.</button>
+      <button onclick="add('0')">0</button>
+      <button onclick="add('/')">/</button>
+      <button onclick="add('*')">x</button>
+
+      <button class="reset" onclick="resetCalc()">RESET</button>
+      <button class="equal" onclick="calculate()">=</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
